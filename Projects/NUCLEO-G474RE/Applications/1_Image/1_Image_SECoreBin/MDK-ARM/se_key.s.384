@@ -1,0 +1,67 @@
+	AREA |.SE_Key_Data|, CODE
+	EXPORT SE_ReadKey_1_Pub
+SE_ReadKey_1_Pub
+	PUSH {R1-R5}
+	MOVW R1, #0xf02
+	MOVT R1, #0x3d9c
+	MOVW R2, #0x8bbb
+	MOVT R2, #0x60f1
+	MOVW R3, #0x290c
+	MOVT R3, #0x2313
+	MOVW R4, #0x2b12
+	MOVT R4, #0xa106
+	STM R0, {R1-R4}
+	ADD R0, R0,#16
+	MOVW R1, #0xef79
+	MOVT R1, #0xbc0d
+	MOVW R2, #0x59a9
+	MOVT R2, #0x4e1c
+	MOVW R3, #0x546d
+	MOVT R3, #0x2363
+	MOVW R4, #0xc9dc
+	MOVT R4, #0x917e
+	STM R0, {R1-R4}
+	ADD R0, R0,#16
+	MOVW R1, #0xd819
+	MOVT R1, #0x2185
+	MOVW R2, #0x3c2c
+	MOVT R2, #0x1f5f
+	MOVW R3, #0xccee
+	MOVT R3, #0xc27b
+	MOVW R4, #0x861f
+	MOVT R4, #0x4753
+	STM R0, {R1-R4}
+	ADD R0, R0,#16
+	MOVW R1, #0xc3ee
+	MOVT R1, #0x342a
+	MOVW R2, #0xd84e
+	MOVT R2, #0x2d14
+	MOVW R3, #0xb4cc
+	MOVT R3, #0xc3c8
+	MOVW R4, #0x8b9a
+	MOVT R4, #0x7e28
+	STM R0, {R1-R4}
+	ADD R0, R0,#16
+	MOVW R1, #0x76a7
+	MOVT R1, #0xf671
+	MOVW R2, #0x171b
+	MOVT R2, #0xcced
+	MOVW R3, #0xf1e2
+	MOVT R3, #0xbf2f
+	MOVW R4, #0x5d5d
+	MOVT R4, #0x3c6a
+	STM R0, {R1-R4}
+	ADD R0, R0,#16
+	MOVW R1, #0xa377
+	MOVT R1, #0xcbc9
+	MOVW R2, #0x1a89
+	MOVT R2, #0x92b0
+	MOVW R3, #0x810
+	MOVT R3, #0x1da7
+	MOVW R4, #0x483a
+	MOVT R4, #0x3eb8
+	STM R0, {R1-R4}
+	POP {R1-R5}
+	BX LR
+
+    END 
